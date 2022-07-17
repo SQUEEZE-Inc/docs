@@ -1,5 +1,3 @@
-# Developer Docs
-
 ## suitebook
 
 ### 本番環境
