@@ -14,7 +14,7 @@
 | Content-Type  | `application/json`                                                        |`
 | Accept        | `application/json`                                                        |
 | User-Agent    | `Partner Test App` (suitebook APIを利用するアプリケーション名)                          |
-| Authorization | `Key 5QGcvr4m4x8iWwXkG3B47TKQaokaRYVu5P0VneMH`（SQUEEZEが発行するAPIキー・APIトークン） |
+| Authorization | `Key 5QGcvr4m4x8iWwXkG3B47TKQaokaRYVu5P0VneMH`（SQUEEZEが発行するAPIキー・トークン） |
 
 
 #### Authorization
