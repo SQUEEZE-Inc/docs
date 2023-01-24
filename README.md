@@ -17,14 +17,14 @@
 | Authorization | `Key 5QGcvr4m4x8iWwXkG3B47TKQaokaRYVu5P0VneMH`（SQUEEZEが発行するAPIキー・APIトークン） |
 
 
-### Authorization
+#### Authorization
 
 Authorizationリクエストヘッダに必要なAPIトークンは、API利用規約を結んだ後にSQUEEZEで発行いたします。
 
 APIトークンは、アプリケーション毎に異なるトークンを使用することができます。 またAPIトークンが漏洩した場合は、SQUEEZE側で該当トークンを無効にする対応をいたします。
 
 
-### API Docs
+#### API Docs
 
 * [version 1](https://squeeze-inc.github.io/docs/suitebook.io/api/v1/)
 * [version 2](https://squeeze-inc.github.io/docs/suitebook.io/api/v2/)
