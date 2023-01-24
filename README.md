@@ -8,9 +8,9 @@
 * [version 1](https://squeeze-inc.github.io/docs/suitebook.io/v1/)
 * [version 2](https://squeeze-inc.github.io/docs/suitebook.io/v2/)
 
-#### API
+### API
 
-##### Request Header Formats
+#### Request Header Formats
 
 以下を参考にリクエストヘッダに値をセットして、suitebook APIをご利用ください。
 
@@ -21,21 +21,21 @@
 | User-Agent    | `Partner Test App`                             | suitebook APIを利用するアプリケーション名 |
 | Authorization | `Key 5QGcvr4m4x8iWwXkG3B47TKQaokaRYVu5P0VneMH` | SQUEEZEが発行するAPIキー・トークン      |
 
-##### Authorization
+#### Authorization
 
 Authorizationリクエストヘッダに必要なAPIトークンは、API利用規約を結んだ後にSQUEEZEで発行いたします。
 
 APIトークンは、アプリケーション毎に異なるトークンを使用することができます。 またAPIトークンが漏洩した場合は、SQUEEZE側で該当トークンを無効にする対応をいたします。
 
-#### Webhook
+### Webhook
 
-##### Endpoint
+#### Endpoint
 
 SQUEEZEに、Webhook通知先のエンドポイントをお知らせください。
 
 セキュリティのために、Webhook通知先のエンドポイントは `HTTPS` である必要があります。
 
-##### Options
+#### Options
 
 Webhook通知を購読するイベントとして
 
@@ -48,7 +48,7 @@ Webhook通知を購読するイベントとして
 また通知されるデータ形式として、[version 1](https://squeeze-inc.github.io/docs/suitebook.io/v1/)
 または [version 2](https://squeeze-inc.github.io/docs/suitebook.io/v2/) のどちらかを選んでください。
 
-##### Authorization
+#### Authorization
 
 Webhookではシグネチャ認証を採用しています。
 
@@ -68,7 +68,7 @@ Authorization: Signature keyId="booking_web_hooks",algorithm="rsa-sha256",header
 | delimiter | `&#124;`                                       | 固定値               |
 | signature | `aVp9aJ/L ... gZTz0w==`                        | 上記のフィールドから計算したデータ |
 
-**headers**
+##### headers
 
 | Key          | Example Value                   | Description     |
 |--------------|---------------------------------|-----------------|
@@ -83,11 +83,11 @@ Authorization: Signature keyId="booking_web_hooks",algorithm="rsa-sha256",header
 
 このペイロードを、RSA証明書を使用して検証します。検証する前に、必ずBase64で署名をデコードしてください。
 
-##### Response
+#### Response
 
 Webhook通知を受け取ったら、10秒以内にHTTP 200番台のレスポンスを返してください。それ以外の場合は、リクエストは失敗したと見なされ再試行されます。
 
-##### Retry
+#### Retry
 
 すべての通知は非同期であり、以下のように最大5回まで再試行されます。
 
