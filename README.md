@@ -14,12 +14,12 @@
 
 以下を参考にリクエストヘッダに値をセットして、suitebook APIをご利用ください。
 
-| Header        | Example Value                                  | Description                 |
-|---------------|------------------------------------------------|-----------------------------|
-| Content-Type  | `application/json`                             ||
-| Accept        | `application/json`                             ||
-| User-Agent    | `Partner Test App`                             | suitebook APIを利用するアプリケーション名 |
-| Authorization | `Key 5QGcvr4m4x8iWwXkG3B47TKQaokaRYVu5P0VneMH` | SQUEEZEが発行するAPIキー・トークン      |
+| Header        | Example Value                                        | Description                     |
+|---------------|------------------------------------------------------|---------------------------------|
+| Content-Type  | `application/json`                                   |                                 |
+| Accept        | `application/json`                                   |                                 |
+| User-Agent    | `Partner Test App`                                   | suitebook APIを利用するアプリケーション名     |
+| Authorization | `suitebook 5QGcvr4m4x8iWwXkG3B47TKQaokaRYVu5P0VneMH` | suitebook + SQUEEZEが発行するAPIトークン |
 
 #### Authorization
 
